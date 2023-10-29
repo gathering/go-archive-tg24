@@ -1,0 +1,31 @@
+seeds:
+  - url: https://www.gathering.org
+include:
+  - www.gathering.org
+  - www.gathering.org/api/wp-content
+  - www.gathering.org/api/?rest_route
+blockRules:
+  - url: matomo.gathering.org
+collection: tg24
+behaviors: autoscroll,autoplay,autofetch,siteSpecific
+waitUntil: load,networkidle0
+generateCDX: true
+combineWARCs: true
+saveState: always
+workers: 4
+profile: /crawls/profiles/tg24.tar.gz
+newContext: window
+screencastPort: 9037
+warcinfo:
+  operator: The Gathering
+  hostname: gathering.org
+state:
+  done: 1
+  queued:
+    - '{"added":"2023-10-29T21:35:57.595Z","url":"https://www.gathering.org/page/offisiell-chat","seedId":0,"depth":1}'
+    - '{"added":"2023-10-29T21:35:57.597Z","url":"https://www.gathering.org/article/9815/vil-du-vaere-crew-pa-tg-i-2024","seedId":0,"depth":1}'
+    - '{"added":"2023-10-29T21:35:57.597Z","url":"https://www.gathering.org/article/9823/sniktitt-bak-kulissene-med-nep","seedId":0,"depth":1}'
+    - '{"added":"2023-10-29T21:35:57.598Z","url":"https://www.gathering.org/innstillinger","seedId":0,"depth":1}'
+  pending: []
+  failed: []
+  errors: []
