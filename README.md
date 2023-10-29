@@ -16,7 +16,7 @@ with additional archive files generated.
 
 PS. As we start using WARC as our new archive standard, we expect to transition to
 a semi-automatic archive setup, where we generate snapshots of the site on a
-set interval, but will likely not be relevant for this TG24 repo.
+set interval.
 
 ## Displaying
 
