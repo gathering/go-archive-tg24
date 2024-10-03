@@ -1,0 +1,34 @@
+seeds:
+  - url: https://www.gathering.org
+include:
+  - www.gathering.org
+  - www.gathering.org/api/wp-content
+  - www.gathering.org/api/?rest_route
+blockRules:
+  - url: matomo.gathering.org
+collection: tg24
+behaviors: autoscroll,autoplay,autofetch,siteSpecific
+waitUntil: load,networkidle0
+generateCDX: true
+combineWARCs: true
+saveState: always
+workers: 4
+profile: /crawls/profiles/tg24.tar.gz
+newContext: window
+screencastPort: 9037
+warcinfo:
+  operator: The Gathering
+  hostname: gathering.org
+state:
+  done: 1
+  queued:
+    - '{"added":"2024-10-03T16:47:12.672Z","url":"https://www.gathering.org/article/10281/crewsoknader-apnes-i-dag","seedId":0,"depth":1}'
+    - '{"added":"2024-10-03T16:47:12.673Z","url":"https://www.gathering.org/article/10231/ledergruppen-for-tg25-er-satt","seedId":0,"depth":1}'
+    - '{"added":"2024-10-03T16:47:12.673Z","url":"https://www.gathering.org/article/10263/vi-soker-chiefs-og-andre-ledende-roller","seedId":0,"depth":1}'
+    - '{"added":"2024-10-03T16:47:12.673Z","url":"https://www.gathering.org/article/10272/the-gathering-25-e-sport-tar-sentrum","seedId":0,"depth":1}'
+    - '{"added":"2024-10-03T16:47:12.674Z","url":"https://www.gathering.org/article/10205/lan-og-datatreff-i-norge","seedId":0,"depth":1}'
+    - '{"added":"2024-10-03T16:47:12.674Z","url":"https://www.gathering.org/article/10210/vil-du-jobbe-med-the-gathering-2025","seedId":0,"depth":1}'
+    - '{"added":"2024-10-03T16:47:12.675Z","url":"https://www.gathering.org/innstillinger","seedId":0,"depth":1}'
+  pending: []
+  failed: []
+  errors: []

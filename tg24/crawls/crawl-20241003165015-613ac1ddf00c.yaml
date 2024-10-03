@@ -1,0 +1,27 @@
+seeds:
+  - url: https://www.gathering.org
+include:
+  - www.gathering.org
+  - www.gathering.org/api/wp-content
+  - www.gathering.org/api/?rest_route
+blockRules:
+  - url: matomo.gathering.org
+collection: tg24
+behaviors: autoscroll,autoplay,autofetch,siteSpecific
+waitUntil: load,networkidle0
+generateCDX: true
+combineWARCs: true
+saveState: always
+workers: 4
+profile: /crawls/profiles/tg24.tar.gz
+newContext: window
+screencastPort: 9037
+warcinfo:
+  operator: The Gathering
+  hostname: gathering.org
+state:
+  done: 8
+  queued: []
+  pending: []
+  failed: []
+  errors: []
